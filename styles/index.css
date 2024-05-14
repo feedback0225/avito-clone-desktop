@@ -1,0 +1,116 @@
+.category__list {
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+.category__list:not(:last-child) {
+  margin-bottom: 5px;
+}
+.category__item {
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  min-height: 90px;
+}
+.category__link {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  padding: 12px 14px;
+}
+.category__title {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.category-auto {
+  grid-row: 1;
+  width: 166px;
+}
+
+.category-immovables {
+  grid-row: 1;
+  width: 108px;
+}
+.category-immovables .menu__title {
+  max-width: 80px;
+}
+
+.category-work {
+  grid-row: 1;
+  width: 108px;
+}
+
+.category-cloth {
+  grid-row: 1;
+  width: 166px;
+}
+
+.category-hobby {
+  grid-row: 1;
+  width: 108px;
+}
+
+.category-animals {
+  grid-row: 1;
+  width: 108px;
+}
+
+.category-buisness {
+  grid-row: 1;
+  width: 166px;
+}
+
+.category-service {
+  grid-row: 2;
+  width: 108px;
+}
+
+.category-electronic {
+  grid-row: 2;
+  width: 108px;
+}
+
+.category-dacha {
+  grid-row: 2;
+  width: 108px;
+}
+.category-dacha span {
+  width: 60%;
+}
+
+.category-part {
+  grid-row: 2;
+  width: 108px;
+}
+
+.category-products {
+  grid-row: 2;
+  width: 166px;
+}
+.category-products span {
+  width: 45%;
+}
+
+.category-travel {
+  grid-row: 2;
+  width: 166px;
+}
+
+.category-health {
+  grid-row: 2;
+  width: 166px;
+}

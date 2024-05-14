@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <script xmlns=""/>
+    <path fill="#02D15C"
+          d="M10.623 3.963A5.491 5.491 0 0 0 7.5 3c-3.24 0-6 2.635-6 6 0 1.668.708 3.222 1.693 4.207l8.104 8.005a1 1 0 0 0 1.406 0l6.588-6.507L15 10.415l-1.293 1.292a3.828 3.828 0 1 1-5.414-5.414l2.33-2.33Zm2.966-.138L9.707 7.707a1.828 1.828 0 0 0 2.586 2.586l2-2a1 1 0 0 1 1.414 0l5.007 5.006.089-.088a.994.994 0 0 0 .044-.047C21.771 12.125 22.5 10.698 22.5 9c0-3.24-2.635-6-6-6a5.496 5.496 0 0 0-2.91.825Z"/>
+    <script xmlns=""/>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

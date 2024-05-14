@@ -1,0 +1,193 @@
+.hero {
+  margin-bottom: 30px;
+}
+.hero__inner {
+  position: relative;
+  background: linear-gradient(270deg, rgb(207, 221, 255) 0%, rgb(243, 237, 254) 100%);
+  border-radius: 24px;
+  padding: 36px 44px 60px;
+  z-index: 2;
+}
+.hero__inner::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 324px;
+  height: 242px;
+  background-image: url("../img/sdam.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.hero__title {
+  position: relative;
+  z-index: 2;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 36px;
+  color: var(--dark-color);
+  margin: 0 0 15px;
+}
+.hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.header-dropdown {
+  position: relative;
+}
+.header-dropdown:nth-child(1) input{
+  max-width: 266px;
+}
+.header-dropdown:nth-child(2) input{
+  max-width: 160px;
+}
+.header-dropdown:nth-child(3) input{
+  max-width: 160px;
+}
+.header-dropdown:nth-child(4) input{
+  max-width: 160px;
+}
+.hero__input {
+  width: 100%;
+  min-height: 40px;
+  border-radius: 6px;
+  padding: 3px 28px 3px 16px;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  border: 3px solid transparent;
+  background-image: url("../img/arrow-2.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 95%;
+  background-color: var(--light-color);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.hero__input:hover{
+  background-color: #F9F9FF;
+}
+.hero__input:focus{
+  border-color: #c2a0fa;
+}
+.header-dropdown__content {
+  position: absolute;
+  top: calc(100% + 3px);
+  background-color: var(--light-color);
+  border-radius: 6px;
+  max-height: 280px;
+  overflow-y: scroll;
+  min-width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 17px 0px;
+  padding: 16px 0 24px;
+}
+.header-dropdown__content::-webkit-scrollbar{
+  display: none;
+}
+.header-dropdown__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.header-dropdown__item {
+  min-height: 40px;
+}
+.header-dropdown__item div label{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 40px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.header-dropdown__item div label:hover{
+  background-color: #F7F7F5;
+}
+.header-dropdown__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 35px 0 15px;
+  width: 100%;
+  min-height: 40px;
+  text-align: left;
+  white-space: nowrap;
+}
+.header-dropdown__btn:hover{
+  background-color: #F7F7F5;
+}
+.active-header-dropdown-btn {
+  background-color: #E5DFD3 !important;
+  background-image: url("../img/checked_2.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 92%;
+  background-position-y: 50%;
+}
+.price {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  padding: 16px 16px 20px;
+}
+.header-dropdown__input {
+  background-color: #F2F1F0;
+  min-height: 40px;
+  min-width: 150px;
+  max-width: 150px;
+  border-radius: 6px;
+  padding: 0 16px;
+  border: 3px solid transparent;
+}
+.header-dropdown__input:focus{
+  border-color: rgb(110, 207, 255);
+}
+.hero__content-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: var(--light-color);
+  box-shadow: rgba(9, 94, 144, 0.2) 0px 4px 12px 0px, rgba(0, 122, 191, 0.1) 0px 2px 3px 0px;
+  user-select: none;
+}
+.hero__content-btn:hover{
+  background-color: #f3edfe;
+}
+.hero__content-btn:active{
+  background-color: rgba(84, 44, 143, 0.2);
+}
+.hero__menu {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+}
+.hero__menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  padding: 0 17px;
+  min-height: 40px;
+  border-radius: 6px;
+  box-shadow: rgba(9, 94, 144, 0.2) 0px 4px 12px 0px, rgba(0, 122, 191, 0.1) 0px 2px 3px 0px;
+  background-color: var(--light-color);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.hero__menu-btn:hover{
+  background-color: #f3edfe;
+}
+.hero__menu-btn:active{
+  background-color: rgba(84, 44, 143, 0.2);
+}
+.top__inner{
+  padding: 0 0 35px !important;
+}

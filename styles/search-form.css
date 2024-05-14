@@ -1,0 +1,91 @@
+li {
+    text-decoration: none;
+}
+
+.search-block {
+    width: 644px;
+    height: 144px;
+    padding: 46px 24px 24px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #d3eefd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-block {
+    margin-top: -10px;
+    font-weight: normal;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 20px;
+    max-width: 100%;
+    vertical-align: top;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    overflow: hidden;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.custom-select {
+    position: relative;
+    font-family: inherit;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    height: 36px;
+    border-radius: 5px;
+    border: 0;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    background-color: #f5f5f5;
+    min-height: 44px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #959a9e;
+    margin-bottom: 10px;
+}
+
+.show {
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    margin: 0;
+    line-height: 0;
+    position: relative;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    outline: none;
+    min-height: 36px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #271700;
+    width: 210px;
+    background-color: #fdfdfd;
+    height: 44px;
+    max-height: 44px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
